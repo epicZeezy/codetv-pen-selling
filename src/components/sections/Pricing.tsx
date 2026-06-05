@@ -91,9 +91,8 @@ export function Pricing() {
                 </p>
                 <Button
                   variant="primary"
-                  disabled
-                  className="mt-6 w-full md:w-auto"
-                  title={pricing.waitlistNote}
+                  href="/checkout"
+                  className="btn-pulse-glow mt-6 w-full md:w-auto"
                 >
                   {pricing.cta}
                 </Button>

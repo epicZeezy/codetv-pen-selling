@@ -4,6 +4,7 @@ import { FAQ } from "@/components/sections/FAQ";
 import { Hero } from "@/components/sections/Hero";
 import { Pricing } from "@/components/sections/Pricing";
 import { Problem } from "@/components/sections/Problem";
+import { QuotesStrip } from "@/components/sections/QuotesStrip";
 import { Science } from "@/components/sections/Science";
 import { Solution } from "@/components/sections/Solution";
 import { Testimonials } from "@/components/sections/Testimonials";
@@ -21,6 +22,7 @@ export default function Home() {
         <Pricing />
         <FAQ />
       </main>
+      <QuotesStrip />
       <Footer />
     </>
   );

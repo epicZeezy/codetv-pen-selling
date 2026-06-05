@@ -1,8 +1,12 @@
 "use client";
 
+import { ExternalLinkIcon } from "@/components/icons/ExternalLinkIcon";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { copy } from "@/content/copy";
+
+const citationLinkClass =
+  "group inline-flex items-center gap-1 transition-colors hover:text-accent";
 
 export function Science() {
   const { science } = copy;
@@ -26,7 +30,15 @@ export function Science() {
               &ldquo;{science.pullQuote}&rdquo;
             </p>
             <footer className="mt-4 font-mono text-xs text-muted">
-              — {science.primaryStudy.authors} ({science.primaryStudy.year})
+              <a
+                href={science.primaryStudy.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={citationLinkClass}
+              >
+                — {science.primaryStudy.authors} ({science.primaryStudy.year})
+                <ExternalLinkIcon className="opacity-0 transition-opacity group-hover:opacity-100" />
+              </a>
             </footer>
           </blockquote>
         </Reveal>
@@ -47,14 +59,24 @@ export function Science() {
               <p className="mt-4 text-sm text-muted">
                 {science.primaryStudy.summary}
               </p>
-              <a
-                href={science.primaryStudy.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="mt-4 inline-block font-mono text-xs text-accent underline underline-offset-4 hover:text-highlight"
-              >
-                Read the paper →
-              </a>
+              <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
+                <a
+                  href={science.primaryStudy.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block font-mono text-xs text-accent underline underline-offset-4 hover:text-highlight"
+                >
+                  Read the paper →
+                </a>
+                <a
+                  href={science.primaryStudy.pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block font-mono text-xs text-muted underline underline-offset-4 hover:text-text"
+                >
+                  PDF
+                </a>
+              </div>
             </article>
           </Reveal>
 

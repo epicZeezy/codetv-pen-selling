@@ -1,9 +1,13 @@
 "use client";
 
+import { ExternalLinkIcon } from "@/components/icons/ExternalLinkIcon";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { copy } from "@/content/copy";
 import { cn } from "@/lib/cn";
+
+const citationLinkClass =
+  "group inline-flex items-center gap-1 transition-colors hover:text-accent";
 
 export function Problem() {
   const { problem } = copy;
@@ -36,9 +40,23 @@ export function Problem() {
                 <p className="mt-2 font-display text-lg font-semibold text-text">
                   {stat.label}
                 </p>
-                <p className="mt-3 font-mono text-xs text-muted">
-                  {stat.source}
-                </p>
+                {"url" in stat && stat.url ? (
+                  <p className="mt-3 font-mono text-xs text-muted">
+                    <a
+                      href={stat.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={citationLinkClass}
+                    >
+                      {stat.source}
+                      <ExternalLinkIcon className="opacity-0 transition-opacity group-hover:opacity-100" />
+                    </a>
+                  </p>
+                ) : (
+                  <p className="mt-3 font-mono text-xs text-muted">
+                    {stat.source}
+                  </p>
+                )}
               </article>
             </Reveal>
           ))}

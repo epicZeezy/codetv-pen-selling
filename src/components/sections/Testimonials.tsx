@@ -24,9 +24,9 @@ export function Testimonials() {
 
         <Reveal delay={0.15}>
           <div className="mt-12 flex gap-4 overflow-x-auto pb-4 md:grid md:grid-cols-3 md:overflow-visible">
-            {testimonials.map((item) => (
+            {testimonials.map((item, index) => (
               <article
-                key={item.name}
+                key={`${item.attribution}-${index}`}
                 className="min-w-[280px] flex-1 border border-border bg-background p-6 transition-shadow hover:-translate-y-1 hover:shadow-lg md:min-w-0"
               >
                 <p className="font-display text-lg leading-relaxed text-text">
@@ -34,11 +34,16 @@ export function Testimonials() {
                 </p>
                 <div className="mt-6 border-t border-border pt-4">
                   <p className="font-display font-semibold text-text">
-                    {item.name}
+                    {item.attribution}
                   </p>
-                  <p className="font-mono text-xs text-muted">
-                    {item.year}, {item.school}
-                  </p>
+                  <a
+                    href={item.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 inline-block font-mono text-xs text-muted underline-offset-4 hover:underline"
+                  >
+                    {item.source}
+                  </a>
                 </div>
               </article>
             ))}

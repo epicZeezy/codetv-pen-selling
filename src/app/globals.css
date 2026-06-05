@@ -158,3 +158,47 @@ body::before {
 .animate-accordion-up {
   animation: accordion-up 0.2s ease-out;
 }
+
+@keyframes btn-pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent) 40%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 20px 4px color-mix(in srgb, var(--accent) 35%, transparent);
+  }
+}
+
+.btn-pulse-glow {
+  animation: btn-pulse-glow 2.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-pulse-glow {
+    animation: none;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  width: max-content;
+  animation: marquee 45s linear infinite;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}

@@ -31,10 +31,10 @@ export function Hero() {
           </Reveal>
           <Reveal delay={0.45}>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <Button variant="primary" href="#problem">
+              <Button variant="primary" href="#pricing">
                 {hero.primaryCta}
               </Button>
-              <Button variant="secondary" href="#pricing">
+              <Button variant="secondary" href="#problem">
                 {hero.secondaryCta}
               </Button>
             </div>

@@ -58,8 +58,8 @@ export function Navbar() {
         </ul>
 
         <div className="hidden lg:block">
-          <Button variant="ghost" href="#pricing">
-            Get the pen
+          <Button variant="ghost" href="/checkout">
+            Buy Now — $3.99
           </Button>
         </div>
 
@@ -110,13 +110,14 @@ export function Navbar() {
             </li>
           ))}
           <li className="pt-4">
-            <a
-              href="#pricing"
-              className="inline-flex w-full items-center justify-center bg-highlight px-6 py-3 font-mono text-sm tracking-wide text-inverse-text transition-colors hover:bg-highlight/90"
+            <Button
+              variant="primary"
+              href="/checkout"
+              className="w-full bg-highlight border-highlight hover:bg-highlight/90"
               onClick={() => setMobileOpen(false)}
             >
-              Get the pen
-            </a>
+              Buy Now — $3.99
+            </Button>
           </li>
         </ul>
       </div>

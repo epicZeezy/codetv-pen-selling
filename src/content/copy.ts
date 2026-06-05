@@ -6,8 +6,8 @@ export const copy = {
     headline: "Your laptop isn't studying. You are.",
     subheadline:
       "One pen. One notebook. Zero tabs. The cheapest upgrade to your GPA.",
-    primaryCta: "See why it works",
-    secondaryCta: "Get the pen — $3.99",
+    primaryCta: "Buy Now — $3.99",
+    secondaryCta: "See why it works",
     proof: "Backed by peer-reviewed research. Seriously. It's a pen.",
   },
   problem: {
@@ -21,6 +21,7 @@ export const copy = {
         value: "23 min",
         label: "to refocus after a distraction",
         source: "Mark et al., UC Irvine",
+        url: "https://ics.uci.edu/~gmark/chi08-mark.pdf",
       },
       {
         value: "6 tabs",
@@ -86,7 +87,11 @@ export const copy = {
       title: "The Pen Is Mightier Than the Keyboard",
       summary:
         "Handwritten notes led to better conceptual understanding compared to laptop transcription — even when laptop notes contained more words.",
-      url: "https://doi.org/10.1177/0956797614524581",
+      url: "https://journals.sagepub.com/doi/abs/10.1177/0956797614524581",
+      pdfUrl:
+        "https://journals.sagepub.com/doi/pdf/10.1177/0956797614524581",
+      citation:
+        "Mueller, P.A. & Oppenheimer, D.M. (2014). Psychological Science, 25(6), 1159–1168.",
     },
     supportingStudies: [
       {
@@ -117,7 +122,7 @@ export const copy = {
     headline: "Four dollars. One decision you'll actually follow through on.",
     subheadline: "Less than one boba. More useful than most of your subscriptions.",
     tag: "One pen. No subscription. No app. No account.",
-    cta: "Get the pen",
+    cta: "Buy Now",
     waitlistNote: "Shipping soon — join the waitlist",
     features: [
       "Writes on paper (revolutionary)",
