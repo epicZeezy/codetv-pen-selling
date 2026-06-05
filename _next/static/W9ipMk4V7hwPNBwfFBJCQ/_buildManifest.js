@@ -1,7 +1,12 @@
 self.__BUILD_MANIFEST = {
   "__rewrites": {
     "afterFiles": [],
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/codetv-pen-selling//_next/:path+",
+        "destination": "/codetv-pen-selling/_next/:path+"
+      }
+    ],
     "fallback": []
   },
   "sortedPages": [
