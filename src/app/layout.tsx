@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, IBM_Plex_Mono, Literata } from "next/font/google";
+import { getSiteUrl } from "@/lib/site-url";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -21,11 +22,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.GITHUB_PAGES === "true"
-      ? "https://epiczeezy.github.io/codetv-pen-selling"
-      : (process.env.NEXT_PUBLIC_SITE_URL ?? "https://codetv-pen-selling.vercel.app"),
-  ),
+  metadataBase: new URL(getSiteUrl()),
   title: "Encode — A focus tool that happens to write",
   description:
     "One pen. One notebook. Zero tabs. The cheapest upgrade to your GPA. Handwriting improves retention — backed by research.",

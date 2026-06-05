@@ -36,20 +36,26 @@ npm run deploy:gh-pages
 
 Site URL: [https://epiczeezy.github.io/codetv-pen-selling/](https://epiczeezy.github.io/codetv-pen-selling/)
 
-### Vercel (recommended for production)
+### Vercel (recommended)
 
-1. Push this repo to GitHub
-2. Import the project at [vercel.com/new](https://vercel.com/new)
-3. Framework preset: **Next.js**
-4. Deploy
+This repo is configured for Vercel out of the box (`output: 'export'`, Next.js preset).
 
-Or via CLI:
+**Option A — Git integration (recommended)**
+
+1. Push to GitHub
+2. Import at [vercel.com/new](https://vercel.com/new) → select `codetv-pen-selling`
+3. Leave defaults: Framework **Next.js**, Build Command `npm run build`, Output handled by Next.js
+4. Deploy — every push to `main` redeploys production
+
+**Option B — CLI**
 
 ```bash
-npm i -g vercel
-vercel login
-vercel --prod
+npx vercel login
+npx vercel          # preview
+npx vercel --prod   # production
 ```
+
+Optional: set `NEXT_PUBLIC_SITE_URL` in the Vercel project settings when using a custom domain.
 
 ## Configuration
 
