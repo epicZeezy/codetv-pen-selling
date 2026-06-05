@@ -3,9 +3,8 @@ import { site } from "./site";
 export const copy = {
   hero: {
     label: "01 — FOCUS",
-    headline: "Your laptop isn't studying. You are.",
-    subheadline:
-      "One pen. One notebook. Zero tabs. The cheapest upgrade to your GPA.",
+    headline: "Write beyond the noise",
+    subheadline: "Write. focus. thrive",
     primaryCta: "Buy Now — $3.99",
     secondaryCta: "See why it works",
     proof: "Backed by peer-reviewed research. Seriously. It's a pen.",
@@ -87,7 +86,7 @@ export const copy = {
       title: "The Pen Is Mightier Than the Keyboard",
       summary:
         "Handwritten notes led to better conceptual understanding compared to laptop transcription — even when laptop notes contained more words.",
-      url: "https://journals.sagepub.com/doi/abs/10.1177/0956797614524581",
+      url: "https://journals.sagepub.com/doi/10.1177/0956797614524581",
       pdfUrl:
         "https://journals.sagepub.com/doi/pdf/10.1177/0956797614524581",
       citation:
@@ -95,18 +94,18 @@ export const copy = {
     },
     supportingStudies: [
       {
-        authors: "Van der Meer & Van der Weel",
-        year: 2017,
+        authors: "Smoker, Murphy & Rockwell",
+        year: 2009,
         summary:
-          "Handwriting activates broader brain connectivity than typing on a keyboard.",
-        url: "https://doi.org/10.3389/fpsyg.2017.01705",
+          "Memory for words is better when handwritten than typed — the psychomotor work of writing adds context that aids retention.",
+        url: "https://journals.sagepub.com/doi/10.1177/154193120905302218",
       },
       {
-        authors: "Smoker, Murphy & Rockwell",
-        year: 2016,
+        authors: "Mueller & Oppenheimer",
+        year: 2014,
         summary:
-          "Letter formation by hand supports literacy development and information retention.",
-        url: "https://doi.org/10.1177/0022057316669817",
+          "Laptop note-takers transcribe more but learn less; longhand notes support stronger conceptual recall.",
+        url: "https://journals.sagepub.com/doi/10.1177/0956797614524581",
       },
     ],
     disclaimer:

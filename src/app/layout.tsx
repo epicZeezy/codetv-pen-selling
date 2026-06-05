@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: "Encode — A focus tool that happens to write",
   description:
-    "One pen. One notebook. Zero tabs. The cheapest upgrade to your GPA. Handwriting improves retention — backed by research.",
+    "Write. focus. thrive. Handwriting improves retention — backed by research.",
   openGraph: {
     title: "Encode — A focus tool that happens to write",
     description:
-      "One pen. One notebook. Zero tabs. The cheapest upgrade to your GPA.",
+      "Write. focus. thrive",
     type: "website",
     images: ["/og-image.svg"],
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Encode — A focus tool that happens to write",
     description:
-      "One pen. One notebook. Zero tabs. The cheapest upgrade to your GPA.",
+      "Write. focus. thrive",
     images: ["/og-image.svg"],
   },
   icons: {

@@ -29,9 +29,7 @@ export function Hero({ backgroundVideoSrc }: HeroProps) {
           </Reveal>
           <Reveal delay={0.15}>
             <h1 className="mt-4 max-w-xl font-display text-4xl font-bold leading-[1.1] tracking-tight text-inverse-text md:text-6xl">
-              Your laptop isn&apos;t{" "}
-              <span className="ink-underline text-highlight">studying</span>.
-              You are.
+              {hero.headline}
             </h1>
           </Reveal>
           <Reveal delay={0.3}>
