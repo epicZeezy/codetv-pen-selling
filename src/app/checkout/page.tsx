@@ -145,7 +145,14 @@ export default function CheckoutPage() {
                               : "border-border hover:border-accent/50",
                           )}
                         >
-                          <p className="font-display font-semibold text-text">
+                          <div className="aspect-[4/3] overflow-hidden border border-border bg-background">
+                            <img
+                              src={pen.image.src}
+                              alt={pen.image.alt}
+                              className="h-full w-full object-cover"
+                            />
+                          </div>
+                          <p className="mt-4 font-display font-semibold text-text">
                             {pen.name}
                           </p>
                           <p className="mt-2 text-sm text-muted">{pen.desc}</p>
@@ -254,6 +261,15 @@ export default function CheckoutPage() {
               </div>
 
               <aside className="border border-border bg-surface p-6 md:p-8 lg:sticky lg:top-24">
+                {selectedPen ? (
+                  <div className="mb-6 overflow-hidden border border-border bg-background">
+                    <img
+                      src={selectedPen.image.src}
+                      alt={selectedPen.image.alt}
+                      className="aspect-[4/3] w-full object-cover"
+                    />
+                  </div>
+                ) : null}
                 <h2 className="font-display text-xl font-semibold text-text">
                   Order summary
                 </h2>

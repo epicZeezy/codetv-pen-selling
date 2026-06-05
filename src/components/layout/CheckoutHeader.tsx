@@ -1,5 +1,6 @@
 "use client";
 
+import { BrandLogo } from "@/components/layout/BrandLogo";
 import Link from "next/link";
 import { site } from "@/content/site";
 import { cn } from "@/lib/cn";
@@ -25,11 +26,8 @@ export function CheckoutHeader() {
       )}
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-8">
-        <Link
-          href="/"
-          className="font-display text-xl font-bold tracking-tight"
-        >
-          {site.brandName}
+        <Link href="/" aria-label={site.brandName}>
+          <BrandLogo onDark={scrolled} />
         </Link>
         <Link
           href="/"

@@ -1,9 +1,9 @@
 export const site = {
-  brandName: "Encode",
-  tagline: "A focus tool that happens to write.",
+  brandName: "ThinkInk",
+  tagline: "Write. Focus. Remember.",
   mission: "Analog tools for students who are tired of pretending their laptop is a notebook.",
   price: 3.99,
-  waitlistEmail: "hello@encodepen.com",
+  waitlistEmail: "hello@thinkink.com",
   navLinks: [
     { label: "The Problem", href: "#problem" },
     { label: "The Fix", href: "#solution" },

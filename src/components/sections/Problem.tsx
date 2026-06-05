@@ -1,5 +1,6 @@
 "use client";
 
+import { TestimonialVideo } from "@/components/sections/TestimonialVideo";
 import { ExternalLinkIcon } from "@/components/icons/ExternalLinkIcon";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionLabel } from "@/components/ui/SectionLabel";
@@ -9,7 +10,11 @@ import { cn } from "@/lib/cn";
 const citationLinkClass =
   "group inline-flex items-center gap-1 transition-colors hover:text-accent";
 
-export function Problem() {
+type ProblemProps = {
+  testimonialVideoSrc?: string;
+};
+
+export function Problem({ testimonialVideoSrc }: ProblemProps) {
   const { problem } = copy;
 
   return (
@@ -67,6 +72,10 @@ export function Problem() {
             {problem.body}
           </p>
         </Reveal>
+
+        {testimonialVideoSrc ? (
+          <TestimonialVideo src={testimonialVideoSrc} />
+        ) : null}
       </div>
     </section>
   );

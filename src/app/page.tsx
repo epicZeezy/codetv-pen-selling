@@ -16,7 +16,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero backgroundVideoSrc={assetPath("/hero-background.mp4")} />
-        <Problem />
+        <Problem testimonialVideoSrc={assetPath("/testimonial.mp4")} />
         <Solution />
         <Science />
         <Testimonials />

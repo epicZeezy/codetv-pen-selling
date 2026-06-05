@@ -23,11 +23,11 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
-  title: "Encode — A focus tool that happens to write",
+  title: "ThinkInk — Write. Focus. Remember.",
   description:
     "Research shows handwritten notes improve learning and recall. Put away the laptop. Pick up a pen. Remember more",
   openGraph: {
-    title: "Encode — A focus tool that happens to write",
+    title: "ThinkInk — Write. Focus. Remember.",
     description:
       "Research shows handwritten notes improve learning and recall. Put away the laptop. Pick up a pen. Remember more",
     type: "website",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Encode — A focus tool that happens to write",
+    title: "ThinkInk — Write. Focus. Remember.",
     description:
       "Research shows handwritten notes improve learning and recall. Put away the laptop. Pick up a pen. Remember more",
     images: ["/og-image.svg"],

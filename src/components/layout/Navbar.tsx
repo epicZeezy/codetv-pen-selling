@@ -1,5 +1,6 @@
 "use client";
 
+import { BrandLogo } from "@/components/layout/BrandLogo";
 import { Button } from "@/components/ui/Button";
 import { site } from "@/content/site";
 import { cn } from "@/lib/cn";
@@ -33,12 +34,8 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-8">
-        <a
-          href="#"
-          className="font-display text-xl font-bold tracking-tight"
-          onClick={() => setMobileOpen(false)}
-        >
-          {site.brandName}
+        <a href="#" onClick={() => setMobileOpen(false)} aria-label={site.brandName}>
+          <BrandLogo onDark />
         </a>
 
         <ul className="hidden items-center gap-6 lg:flex">

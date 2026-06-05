@@ -1,3 +1,4 @@
+import { BrandLogo } from "@/components/layout/BrandLogo";
 import { site } from "@/content/site";
 import { copy } from "@/content/copy";
 
@@ -6,7 +7,7 @@ export function Footer() {
     <footer className="bg-inverse-bg text-inverse-text">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 md:grid-cols-3 md:px-8">
         <div>
-          <p className="font-display text-2xl font-bold">{site.brandName}</p>
+          <BrandLogo onDark imageClassName="h-9 md:h-10" />
           <p className="mt-3 max-w-xs text-sm text-inverse-text/70">
             {site.mission}
           </p>
