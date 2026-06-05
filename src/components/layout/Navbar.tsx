@@ -29,7 +29,7 @@ export function Navbar() {
         "fixed inset-x-0 top-0 z-40 transition-colors duration-300",
         scrolled
           ? "bg-inverse-bg text-inverse-text shadow-sm"
-          : "bg-transparent text-text",
+          : "bg-transparent text-inverse-text",
       )}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4 md:px-8">
@@ -48,7 +48,7 @@ export function Navbar() {
                 href={link.href}
                 className={cn(
                   "font-mono text-xs uppercase tracking-wider transition-colors hover:text-highlight",
-                  scrolled ? "text-inverse-text/80" : "text-muted",
+                  scrolled ? "text-inverse-text/80" : "text-inverse-text/75",
                 )}
               >
                 {link.label}
