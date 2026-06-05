@@ -4,7 +4,8 @@ export const copy = {
   hero: {
     label: "01 — FOCUS",
     headline: "Write beyond the noise",
-    subheadline: "Write. focus. thrive",
+    subheadline:
+      "Research shows handwritten notes improve learning and recall. Put away the laptop. Pick up a pen. Remember more",
     primaryCta: "Buy Now — $3.99",
     secondaryCta: "See why it works",
     proof: "Backed by peer-reviewed research. Seriously. It's a pen.",

@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(getSiteUrl()),
   title: "Encode — A focus tool that happens to write",
   description:
-    "Write. focus. thrive. Handwriting improves retention — backed by research.",
+    "Research shows handwritten notes improve learning and recall. Put away the laptop. Pick up a pen. Remember more",
   openGraph: {
     title: "Encode — A focus tool that happens to write",
     description:
-      "Write. focus. thrive",
+      "Research shows handwritten notes improve learning and recall. Put away the laptop. Pick up a pen. Remember more",
     type: "website",
     images: ["/og-image.svg"],
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Encode — A focus tool that happens to write",
     description:
-      "Write. focus. thrive",
+      "Research shows handwritten notes improve learning and recall. Put away the laptop. Pick up a pen. Remember more",
     images: ["/og-image.svg"],
   },
   icons: {
