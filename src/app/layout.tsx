@@ -22,7 +22,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://codetv-pen-selling.vercel.app",
+    process.env.GITHUB_PAGES === "true"
+      ? "https://epiczeezy.github.io/codetv-pen-selling"
+      : (process.env.NEXT_PUBLIC_SITE_URL ?? "https://codetv-pen-selling.vercel.app"),
   ),
   title: "Encode — A focus tool that happens to write",
   description:

@@ -26,7 +26,17 @@ npm run build
 
 Static files are exported to `./out`.
 
-## Deploy to Vercel
+## Deploy
+
+### GitHub Pages (live)
+
+```bash
+npm run deploy:gh-pages
+```
+
+Site URL: [https://epiczeezy.github.io/codetv-pen-selling/](https://epiczeezy.github.io/codetv-pen-selling/)
+
+### Vercel (recommended for production)
 
 1. Push this repo to GitHub
 2. Import the project at [vercel.com/new](https://vercel.com/new)
