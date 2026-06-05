@@ -1,0 +1,27 @@
+import { Footer } from "@/components/layout/Footer";
+import { Navbar } from "@/components/layout/Navbar";
+import { FAQ } from "@/components/sections/FAQ";
+import { Hero } from "@/components/sections/Hero";
+import { Pricing } from "@/components/sections/Pricing";
+import { Problem } from "@/components/sections/Problem";
+import { Science } from "@/components/sections/Science";
+import { Solution } from "@/components/sections/Solution";
+import { Testimonials } from "@/components/sections/Testimonials";
+
+export default function Home() {
+  return (
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <Problem />
+        <Solution />
+        <Science />
+        <Testimonials />
+        <Pricing />
+        <FAQ />
+      </main>
+      <Footer />
+    </>
+  );
+}
